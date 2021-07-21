@@ -3,9 +3,17 @@ import './App.css';
 
 function App() {
   const name = "리액트";
+  const style = {
+    backgroundColor : 'purple',
+    color: 'white',
+    fontSize: '48px',
+    fontWeight: 'bold',
+    padding: 16
+  };
+
   return (
-    <div>
-      {name === "리액트" ? (<h1>{name}입니다</h1>) : (<h1>{name}이 아닙니다</h1>)};
+    <div style = {style}>
+      {name}
     </div>
   );
 }
