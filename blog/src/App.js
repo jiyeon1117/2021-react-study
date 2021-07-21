@@ -6,6 +6,8 @@ function App() {
   let [day, setDay] = useState(['7월 20일 발행', '7월 28일 발행', '8월 13일 발행']);
   let [like, setLike] = useState(0);
 
+  const onClickAdd = () => setTitle(['여자 농구 추천', '영화 관련', '리액트 공부']);
+
   const onIncreaseLike = () => {
     setLike(like + 1);
   };
@@ -15,6 +17,7 @@ function App() {
       <div className="black-nav">
         <div>Jiyeon's Blog</div>
       </div>
+      <button onClick={onClickAdd}>수정버튼</button>
 
       <div className="list">
         <h2>{title[0]}</h2>
