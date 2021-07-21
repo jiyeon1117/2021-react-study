@@ -1,21 +1,9 @@
 import React, { Fragment } from 'react';
 import './App.css';
+import MyComponent from './components/MyComponent';
 
 function App() {
-  const name = "리액트";
-  const style = {
-    backgroundColor : 'purple',
-    color: 'white',
-    fontSize: '48px',
-    fontWeight: 'bold',
-    padding: 16
-  };
-
-  return (
-    <div style = {style}>
-      {name}
-    </div>
-  );
+  return <MyComponent/>
 }
 
 export default App;
