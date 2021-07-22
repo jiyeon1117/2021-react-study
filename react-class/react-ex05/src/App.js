@@ -1,8 +1,8 @@
 import React from "react";
-import InlineStyle from "./InlineStyle";
+import Info from "./components/Info";
 
 const App = () => {
-  return <InlineStyle/>
+  return <Info/>
 }
 
 export default App;

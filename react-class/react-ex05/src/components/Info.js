@@ -4,14 +4,14 @@ const Info = () => {
   const [name, setName] = useState();
   const [nickname, setNickname] = useState();
 
-  const onChangeName = () => setName(name);
-  const onChangeNickname = () => setNickname(nickname);
+  const onChangeName = e => setName(e.target.value);
+  const onChangeNickname = e => setNickname(e.target.value);
 
   return(
     <div>
       <div>
-        <input value={name} onClick={onChangeName}/>
-        <input value={nickname} onClick={onChangeName}/>
+        <input value={name} onChange={onChangeName}/>
+        <input value={nickname} onChange={onChangeNickname}/>
       </div>
       <div>
         <div>
