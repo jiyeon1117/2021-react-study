@@ -1,8 +1,8 @@
 import React from "react";
-import Info from "./components/Info";
+import IterationSample from "./components/IterationSample";
 
 const App = () => {
-  return <Info/>
+  return <IterationSample/>
 }
 
 export default App;
